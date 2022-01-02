@@ -529,12 +529,17 @@ section{
    padding: 100px 100px 0 0;
 }
 
+.pro_container4 .pro_bg{
+   background-image: url(img/erd.PNG);
+}
 
 
-
-
-
-
+.pro_container4 .pro_right .pro_bg {
+   width: 602px;
+   height: 381px;
+   box-shadow: rgb(0 0 0 / 30%) 20px 20px 20px 0px;
+   background-size: cover;
+}
 
 #project {
    width: 100%;
