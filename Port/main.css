@@ -1,0 +1,743 @@
+*{ list-style: none;
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;}
+body{font-family:'Noto Sans KR',
+   sans-serif; 
+   color:#2b2b2b;
+   }
+  
+   @font-face {
+      font-family: 'GongGothicMedium';
+      src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.0/GongGothicMedium.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+  }
+
+  .fullsection{width:100%;height:100%;position:relative;}
+
+ body::-webkit-scrollbar {
+  display: none;
+}
+
+.clear{
+   display:block;
+   content: '';
+   clear: both;
+}
+
+
+/* #wrap{
+
+   border: 1px solid red;
+
+   width: 100%;
+   
+
+   
+} */
+
+
+header {
+   position:fixed;
+  top: 0;
+   width: 100%;
+   background-color: rgba(255, 255, 255, 0);
+   z-index: 100;
+   
+   
+}
+
+
+.active{
+   background-color: white;
+   transition-duration: 0.5s;
+   transition-timing-function: ease;
+   
+ }
+
+ .active a{
+   color: #222;
+ }
+
+
+.header_container{
+   width: 1180px;
+   height: 70px;
+ 
+   margin: 0 auto;
+}
+
+header ul{
+
+   list-style: none;
+   
+    width: 1180px;
+   
+    height: 70px;
+    z-index: 100;
+    
+
+ 
+}
+
+header ul li{
+   float: left;
+   
+   padding-left: 116px;
+}
+
+
+
+header ul > li > a{
+   height: 60px;
+   line-height: 60px;
+   font-size: 24px;
+   font-weight: 700;
+   transition: all 0.4s;
+   color: #fff;
+   text-decoration: none;
+}
+  
+
+
+
+
+header ul > li > a:hover{
+   color:#446383;;
+}
+
+
+section{
+ 
+   margin: 0 auto;
+  
+}
+
+
+#main .inner {
+   position: relative;
+   margin: 0 auto;
+   max-width: 1080px;
+   padding-top: 232px;
+}
+
+
+#main {
+   width: 100%;
+   height: 937px;
+  
+   background-image: url(img/main.png);
+   background-repeat: no-repeat;
+   background-size: cover;   
+
+   opacity: .9;
+   z-index: -1;
+
+}
+
+
+.intro_text {
+   margin: 0 auto;
+   padding: 25px;
+  
+   height: 100px;
+   max-height: 208px;
+}
+
+.intro_text p {
+   margin-top: 20px;
+   font-size: 45px;
+   font-family: "GongGothicMedium";
+   text-align: center;
+   color: #fff;
+}
+
+
+#main .scroll {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-top: 30px;
+   color: #fff;
+}
+
+
+#main .mouse_js{
+   margin-top: 380px;
+}
+
+#main .mouse_js .mouse {
+   width: 30px;
+   height: 60px;
+    border: 2px solid #D5D5FF;
+    border-radius: 60px;
+    position: relative;
+    margin:0 auto;
+}
+
+
+
+
+.mouse::before {
+   content: '';
+   width: 13px;
+   height: 13px;
+   position: absolute;
+   top: 8px;
+   left: 50%;
+   transform: translateX(-50%);
+   background-color: #fff;
+   border-radius: 50%;
+   opacity: 1;
+   animation: wheel 2s infinite;
+}
+
+@keyframes wheel {
+	to {
+		opacity: 0;
+		top: 35px;
+	}
+}
+
+
+#skills_wrap{
+
+
+  
+   z-index: -1;
+  
+}
+
+
+#skil{
+   box-sizing: border-box;
+    
+    max-width: 1180px;
+    
+    margin: 0 auto;
+    height: 60rem;
+}
+
+#skil .skil_title{
+   display: table;
+    position: relative;
+    margin: 0 auto 48px;
+}
+
+#skil .skil_title>h2{
+   border-bottom-width: 1px;
+   /* border-bottom-style: solid; */
+   color: #f77272;
+   font-size: 5rem;
+   text-align: center;
+   padding-top: 30px;
+   margin-bottom: 50px;
+   
+}
+
+#skills_wrap .skil_container {
+   display: flex;
+   justify-content: space-between;
+}
+.skil_container {
+   position: relative;
+   margin: 0 auto;
+   max-width: 1180px;
+  
+}
+
+#skills_wrap .main_tit {
+   flex-basis: 70%;
+   margin-top: 155px;
+    font-size: 2.2rem;
+}
+ .main_tit {
+   font-size: 3.8rem;
+   font-family: 'GongGothicMedium';
+}
+
+
+#skills_wrap .skils_list .skils_item {
+   margin-bottom: 40px;
+   padding-left: 30px;
+   position: relative;
+}
+
+#skills_wrap .skils_list .skils_item span {
+   padding-bottom: 20px;
+   font-size: 24px;
+}
+
+
+#skills_wrap .skils_list ul{
+   padding-left: 160px;
+}
+
+.xi-check:before {
+   content: "\e928";
+   margin-right: 10px;
+}
+
+
+
+.pro_container {
+   position: relative;
+   margin: 0 auto;
+   max-width: 1180px;
+   display: flex;
+   margin-bottom: 350px;
+ 
+ 
+   
+   
+}
+
+.pro_container .pro_left {
+   padding: 0 10px;
+   width: 470px;
+   max-width: 470px;
+   
+}
+
+
+
+.pro_left .pro_tit .number {
+   font-size: 50px;
+   font-weight: 500;
+   color: #ff8988;
+   margin-bottom: 10px;
+}
+
+
+
+.pro_left .pro_tit .site_title {
+    font-size: 36px;
+    font-weight: normal;
+    font-family: "GongGothicMedium";
+    margin-bottom: 20px;
+}
+.pro_left ul.info_area li{
+
+   padding-bottom: 30px;
+
+}
+.pro_left ul.info_area li h2 {
+   padding-bottom: 5px;
+   font-size: 24px;
+}
+
+
+
+.pro_left ul.info_area li p {
+   font-size: 18px;
+   letter-spacing: .1px;
+   word-break: break-word;
+}
+
+
+.pro_right {
+  
+   display: block;
+   vertical-align: middle;
+
+   padding-left: 100px;
+    padding-top: 100px;
+}
+
+
+.pro_right .pro_bg {
+   width: 602px;
+    height: 324px;
+   box-shadow: 20px 20px 20px 0px rgb(0 0 0 / 30%);
+   background-size: cover;
+}
+.pro_bg {
+   background: url(img/Pheonix.PNG);
+}
+
+
+
+.btn {
+   display: flex;
+   justify-content: space-around;
+   text-align: center;
+}
+
+
+.btn .btn-line {
+   margin: 0;
+   
+   flex-basis: 45%;
+
+}
+
+
+.btn-line {
+   display: inline-block;
+
+   padding: 12px 20px;
+   color: #F77272;
+   border-radius: 4px;
+   border: solid 1px #F77272;
+   cursor: pointer;
+   position: relative;
+   z-index: 1;
+   text-decoration: none;
+   transition: all 0.4s;
+}
+
+.btn-line::after {
+   content: "";
+   width: 0%;
+   height: 100%;
+   top: 0;
+   position: absolute;
+   left: 0;
+   transition: all 0.4s;
+   background: #F77272;
+}
+
+.btn-line > a:hover {
+   color: #333;
+}
+.btn-line > a:hover:after {
+   width: 100%;
+   z-index: -1;
+}
+
+.btn-line .btn-text {
+   font-weight: 600;
+   
+}
+
+
+.btn-line:hover {
+   text-decoration: none;
+   color: #fff;
+   background-color: #F77272;
+}
+
+
+/* pro2 */
+
+.pro_container2 {
+   position: relative;
+   margin: 0 auto;
+   max-width: 1180px;
+   display: flex;
+   margin-bottom: 300px;
+   flex-direction: row-reverse;
+ 
+   
+   
+}
+
+.pro_container2 .pro_left {
+   padding: 0 10px;
+   width: 470px;
+   max-width: 470px;
+   
+}
+
+
+.pro_container2 .pro_right {
+  
+   display: block;
+   vertical-align: middle;
+
+   padding: 100px 100px 0 0;
+}
+
+.pro_container2 .pro_bg{
+   background-image: url(img/deflormain.png);
+}
+
+
+
+/* pro3 */
+
+.pro_container3 {
+   position: relative;
+   margin: 0 auto;
+   max-width: 1180px;
+   display: flex;
+   margin-bottom: 300px;
+
+ 
+   
+   
+}
+
+.pro_container3 .pro_left {
+   padding: 0 10px;
+   width: 470px;
+   max-width: 470px;
+   
+}
+
+
+.pro_container3 .pro_right {
+  
+ 
+   display: block;
+   vertical-align: middle;
+
+   padding-left: 100px;
+    padding-top: 100px;
+}
+
+
+.pro_container3 .pro_bg{
+   background-image: url(img/land.PNG);
+}
+
+
+.pro_container3 .pro_right .pro_bg {
+    width: 602px;
+    height: 460px;
+    box-shadow: rgb(0 0 0 / 30%) 20px 20px 20px 0px;
+    background-size: cover;
+}
+/* pro4 */
+
+.pro_container4 {
+   position: relative;
+   margin: 0 auto;
+   max-width: 1180px;
+   display: flex;
+   margin-bottom: 300px;
+   flex-direction: row-reverse;
+ 
+   
+   
+}
+
+.pro_container4 .pro_left {
+   padding: 0 10px;
+   width: 470px;
+   max-width: 470px;
+   
+}
+
+
+.pro_container4 .pro_right {
+  
+   display: block;
+   vertical-align: middle;
+
+   padding: 100px 100px 0 0;
+}
+
+
+
+
+
+
+
+
+#project {
+   width: 100%;
+   padding-bottom: 30px;
+   margin: 0 auto;
+   
+   
+   
+}
+
+#project > h2{
+
+   color: #f77272;
+   font-size: 5rem;
+   text-align: center;
+   padding-top: 100px;
+   margin-bottom: 90px;
+}
+
+#project_container{
+
+   width: 1084px;
+   padding: 48px;
+    margin: 30px auto 250px;
+    border-radius: 16px;
+    background-color: #fff;
+    
+}
+
+#project_container h2{
+   padding-bottom: 50px;
+   font-family: sans-serif;
+  
+   font-size: 40px;
+   color: #222;
+   text-align: center;
+
+
+   
+}
+
+
+#about {
+   overflow:hidden;
+   margin-bottom: 80px;
+   height: 973px;
+}
+
+
+#about>div {
+   width:1180px; 
+   display:block; 
+   margin:auto;}
+
+
+#about ul {
+   line-height:245%;
+}
+#about h2 {border-bottom-width: 1px;
+   overflow: hidden;
+  
+   
+   margin-top: 100px;
+
+   color: #f77272;
+   font-size: 5rem;
+   text-align: center;
+   padding-top: 30px;
+   margin-bottom: 50px;}
+
+    #about p {
+   font-size:1.2rem;
+    color:#3a3a3a;}
+
+#about li {
+   font-size:1.15rem;
+}
+
+#about1,#about2,#about3 {flex:1;}
+
+#about1 ul:nth-of-type(1) {
+   font-weight:bold;
+}
+
+#about1 ul:nth-of-type(1)>li,#about2 ul:nth-of-type(1)>li,#about3 
+
+ul:nth-of-type(1)>li {color:#3a3a3a;}
+
+#about1 ul:nth-of-type(2)>li,#about2 ul:nth-of-type(2)>li,#about3 
+
+
+ul:nth-of-type(2)>li {color:#565656;}
+
+#about1 {
+   border-right:1.5px solid #e5e5e5; 
+   float: left;
+   margin-right: 165px;
+
+   padding-right: 55px;}
+
+#about1>div {
+   margin-left:75px;
+}
+#about1>div:nth-of-type(2) {
+   display:flex; 
+   margin-top:35px;
+}
+#about1>div:nth-of-type(2)>ul:nth-of-type(2),#about2 ul:nth-of-type(2),#about3 ul:nth-of-type(2) {
+   margin-left:50px;
+}
+
+#about2 {
+   margin-left:125px;
+}
+#about2 p,#about3 p {
+   margin-bottom:20px; 
+   font-weight:bold;
+}
+#about2>div,#about3>div {
+   margin-bottom:40px;
+}
+#about2>div>div,#about3>div>div {
+   display:flex;
+}
+
+#about3 ul:nth-of-type(1)>li {
+   margin:11px 0;}
+#about3 ul:nth-of-type(2)>li {
+   color:white; 
+   line-height:145%; 
+   font-size:0.9rem;
+} 
+
+
+
+
+
+footer div {
+   width: 1180px;
+   display: block;
+   margin: 0 auto;
+}
+
+#contact{
+   padding-top: 70px;
+   border-top: 1px solid #d3d3d3;
+}
+
+
+.copyright {
+   padding: 12px 0;
+   font-size: 1.2rem;
+   text-align: center;
+   background: #262626;
+   color: white;
+}
+
+#contact .contact_info {
+   padding-top: 10px;
+   font-size: 1.2rem;
+   text-align: center;
+   line-height: 170%;
+}
+
+#contact .qr_code{
+ 
+   text-align: center;
+}
+
+#contact .qr_code img{
+   width: 250px;
+   height: 250px;
+}
+
+#contact h2{
+   text-align: center;
+    font-size: 2.3rem;
+    margin-bottom: 10px;
+}
+
+#contact .contact_info h3{
+   
+      font-size: 1.6rem;
+      letter-spacing: -0.2px;
+      margin-bottom: 5px;
+      text-align: center;
+}
+
+footer ul:nth-of-type(1) {
+   margin-right: 11px;
+}
+
+
+#contact .contact_info_sangse{
+   
+   margin-top: 10px;
+}
+
+footer>div>p:nth-of-type(1) {
+  margin-bottom: 15px;
+   text-align: center;
+  
+   padding-top: 15px;
+   color: #989898;
+}
+
